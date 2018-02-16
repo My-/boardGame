@@ -3,7 +3,7 @@ package cs.game.checkers;
 import my.utils.Position;
 
 /**
- * this interface will be used for each board game.
+ * this interface will be used for each squareBoard game.
  * At the moment is just a template to get idea what to expect from it.
  */
 public interface BoardGame {
