@@ -2,6 +2,8 @@ package cs.game.checkers;
 
 import my.utils.Position;
 
+import java.util.Optional;
+
 /**
  * this interface will be used for each squareBoard game.
  * At the moment is just a template to get idea what to expect from it.
@@ -9,9 +11,9 @@ import my.utils.Position;
 public interface BoardGame {
 
     /**
-     * should be used to select piece. to move piece, to attack piece and so on.
+     * Should be used to select piece before moving it or before any action an a piece.
      */
-    boolean select(Position atPosition);
+    Optional<Piece> select(Position atPosition);
 
     /**
      * use to unselected piece.

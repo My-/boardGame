@@ -6,8 +6,8 @@ import java.util.Objects;
 
 public class Piece {
 
-    Pieces name;
-    Position pos;
+    private Pieces name;
+    private Position pos;
 
     /**
      * Private constructor. Use factory method  <u>Piece.of()</u> to create instance of this class.
@@ -47,6 +47,17 @@ public class Piece {
      */
     public Position getPos() {
         return pos;
+    }
+
+    /**
+     * This method changes (mutates) instance <u>position</u> field.
+     *
+     * @param pos new position of the field.
+     * @return updated this instance.
+     */
+    public Piece changePosition(Position pos){
+        this.pos = Position.of(pos);
+        return this;
     }
 
     @Override

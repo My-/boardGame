@@ -12,7 +12,7 @@ public class Position implements Comparable<Position>{
          * @param x coordinates of position
          * @param y coordinates of position
          */
-        public Position(int x, int y) {
+        private Position(int x, int y) {
             X = x;
             Y = y;
         }
@@ -22,7 +22,7 @@ public class Position implements Comparable<Position>{
          *
          * @param pos coordinates of position([0]=x, [1]=y)
          */
-        public Position(int[] pos) {
+        private Position(int[] pos) {
             X = pos[0];
             Y = pos[1];
         }
@@ -32,7 +32,7 @@ public class Position implements Comparable<Position>{
          *
          * @param pos copy position
          */
-        public Position(Position pos){
+        private Position(Position pos){
             X = pos.X;
             Y = pos.Y;
         }
@@ -45,6 +45,7 @@ public class Position implements Comparable<Position>{
          * @return newly created object
          */
         public static Position of(int x, int y){ return new Position(x, y); }
+        public static Position of(Position pos){ return new Position(pos); }
 
         public int getX() { return X; }
         public int getY() { return Y; }
