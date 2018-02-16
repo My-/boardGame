@@ -1,6 +1,6 @@
-package ie.gmit.cs;
+package cs.game.checkers;
 
-import some.custom.Position.class
+import my.utils.Position;
 
 /**
  * this interface will be used for each board game.
