@@ -10,6 +10,8 @@ import java.util.Optional;
  */
 public interface BoardGame {
 
+    Optional<Piece> get(Position pos);
+
     /**
      * Should be used to select piece before moving it or before any action an a piece.
      */
@@ -26,14 +28,8 @@ public interface BoardGame {
     boolean move(Position toPosition);
 
     /**
-     * use to start game
+     * use it to check if we have winner.
+     * @return winner or Optional empty if here is no winner.
      */
-    void start();
-
-    /**
-     * use to check game.
-     * say in chess it would be is here check or mate.
-     * maybe done() or nextMove() would be better name.
-     */
-    void check();
+    public Optional<Pieces> getWinner();
 }
