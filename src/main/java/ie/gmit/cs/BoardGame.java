@@ -1,6 +1,6 @@
 package ie.gmit.cs;
 
-import javax.swing.text.Position;
+import some.custom.Position.class
 
 /**
  * this interface will be used for each board game.
